@@ -4,21 +4,4 @@ conda_env: conda.yaml
 
 entry_points:
   main:
-    parameters:
-      C:
-        type: float
-        default: 1.0
-
-      kernel:
-        type: str
-        default: rbf
-
-      gamma:
-        type: str
-        default: scale
-
-    command: >
-      python modelling.py
-      --C {C}
-      --kernel {kernel}
-      --gamma {gamma}
+    command: "python modelling.py"
